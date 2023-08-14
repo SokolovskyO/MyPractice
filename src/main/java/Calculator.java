@@ -4,6 +4,10 @@ import java.util.Scanner;
 import static junit.framework.Assert.assertEquals;
 
 
+/**
+ Created by Oleg Sokolovsky
+ */
+
 public class Calculator {
 
     public static void main(String[] args) {
