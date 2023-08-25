@@ -60,7 +60,7 @@ static class CalculatorTests {
     public void exceptionDivisionOnZeroTest() throws Throwable {
         try {
             Calculator calc = new Calculator("/", 9.0, 0);
-        calc.getResult();
+            calc.calculateResult();
         }
         catch (Exception e) {
             assertEquals(e.getMessage(), "Ошибка: на ноль делить нельзя");
@@ -71,7 +71,7 @@ static class CalculatorTests {
     public void exceptionWrongOperationTest() throws Throwable {
         try {
             Calculator calc = new Calculator("$", 10, 10);
-            calc.getResult();
+            calc.calculateResult();
         }
         catch (Exception e) {
             assertEquals(e.getMessage(), "Ошибка: выбрана неверная математическая операция");
